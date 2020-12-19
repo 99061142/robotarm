@@ -14,19 +14,18 @@
             robotArm.speed = 500;
 
 
-            for(groteloop = 5; groteloop > 0; groteloop--) {
+            //Doet de onderste code 5 keer herhalen
+            for(j = 5; j > 0; j--) {
                 for (Begin = 0; Begin < 6; Begin++) {
-                     robotArm.moveRight();
-                     robotArm.grab();
-                     robotArm.moveLeft();
-                     robotArm.drop();
+                    robotArm.moveRight();
+                    robotArm.grab();
+                    robotArm.moveLeft();
+                    robotArm.drop();
                 }
-                 robotArm.moveRight();
-                 robotArm.moveRight();
-             }
-             robotArm.moveLeft();
-    
-        
+                robotArm.moveRight();
+                robotArm.moveRight();
+            }
+            robotArm.moveLeft();
             // De door jou opgegeven instructies uitvoeren
             robotArm.run();
         </script>

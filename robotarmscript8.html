@@ -15,13 +15,14 @@
 
 
             robotArm.moveRight();
-            for(groteloop = 7; groteloop > 0; groteloop--) { //Bepaalt hoevaak de arm heen en weer moet
+            //Laat de onderste code 7 keer bewegen
+            for(j = 7; j > 0; j--) { 
                 robotArm.grab();
-                for (rechts = 0; rechts < 8; rechts++) { 
+                for (i = 0; i < 8; i++) { 
                     robotArm.moveRight();
                 }
                 robotArm.drop();
-                for (links = 0; links < 8; links++) {
+                for (i = 0; i < 8; i++) {
                     robotArm.moveLeft();
                 }
         }

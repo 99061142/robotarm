@@ -13,13 +13,16 @@
             // Jou instructies volgen hier
             robotArm.speed = 500;
 
-            for (Begin = 0; Begin < 3; Begin++) {  //Doet de arm op de goede begin positie brengen
+
+            //Doet de arm op de goede begin positie brengen
+            for (Begin = 0; Begin < 3; Begin++) { 
                 robotArm.moveRight();
-             }
-            for(loopheenterug = 4; loopheenterug > 0; loopheenterug--) { //Bepaalt hoevaak de arm heen en weer moet
+            }
+            //Bepaalt hoevaak de arm heen en weer moet
+            for(loopheenterug = 4; loopheenterug > 0; loopheenterug--) {
                 for(kleineloop = 0; kleineloop < loopheenterug; kleineloop++){
-                     robotArm.grab();
-                     for (heen = 0; heen < 5; heen++) { 
+                    robotArm.grab();
+                    for (heen = 0; heen < 5; heen++) { 
                         robotArm.moveRight();
                     }
                     robotArm.drop();
@@ -29,8 +32,6 @@
                 }
                 robotArm.moveLeft();
             }
-
-            
             // De door jou opgegeven instructies uitvoeren
             robotArm.run();
         </script>
